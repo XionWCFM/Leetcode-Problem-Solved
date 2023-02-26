@@ -10,7 +10,7 @@ var twoSum = function(nums, target) {
         let diff = target - nums[i]
 
         if (mp.has(diff)) {
-            return [i, mp.get(diff)]
+            return [mp.get(diff),i]
         }
 
         mp.set(nums[i], i)
